@@ -3,56 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>StudyHub-Productivity Dashboard</title>
+    <meta name="description" content="StudyHub is a productivity dashboard to manage study hours, tasks, planner, progress, and focus sessions.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class=""app-header>
-        <h1 class="logo-text">StudyHub</h1>
-        <!-- <img class="logo" src="assets/logo.ico" alt="StudyHub logo"> -->
-        <button type="button" class="theme-toggle">Theme Toggle</button>
-        <div class="profile">Profile</div>
+
+    <!-- Top Bar -->
+    <header class="app-header">
+        <div class="left-side">
+            <h1 class="logo-text">StudyHub</h1>
+        </div>
+        <div class="right-side">
+            <button type="button" class="theme-toggle">Theme Toggle</button>
+            <div class="profile">Profile</div>
+        </div>
     </header>
 
-    <div class="app-header">
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="app-layout">
+
+        <!-- Sidebar Navigation -->
         <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="tasks">Tasks</a></li>
-                    <li><a href="#planner">Planner</a></li>
-                    <li><a href="#progress">Progress</a></li>
-                    <li><a href="#focus">Focus</a></li>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link active">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tasks" class="nav-link">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#planner" class="nav-link">Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#progress" class="nav-link">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#focus" class="nav-link">Focus</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
-        <main class="app-main">
-            <section id="dashboard">
-                <h2>Dashboard</h2>
-                <p>Overview of your study hours</p>
+
+        <!-- Main Content Area -->
+        <main class="app-main" role="main">
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Dashboard</h2>
+                    <p class="section-description">Overview of your study hours</p>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="stat-card">
+                        <h3>Total Study Hours</h3>
+                        <p class="stat-number">24h</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed Tasks</h3>
+                        <p class="stat-number">12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Goals</h3>
+                        <p class="stat-number">3</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Focus Sessions</h3>
+                        <p class="stat-number">8</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tasks Section -->
+            <section id="tasks" class="app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Tasks</h2>
+                    <p class="section-description">Manage your study tasks</p>
+                </div>
                 <div class="section-content"></div>
             </section>
-            <section id="tasks">
-                <h2>Tasks</h2>
-                <p>Manage your study tasks</p>
+
+            <!-- Planner Section -->
+            <section id="planner" class="app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Planner</h2>
+                    <p class="section-description">Plan your weekly study schedule</p>
+                </div>
                 <div class="section-content"></div>
             </section>
-            <section id="planner">
-                <h2>Planner</h2>
-                <p>Plan your weekly study schedule</p>
+
+            <!-- Progress Section -->
+            <section id="progress" class="app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Progress</h2>
+                    <p class="section-description">Track your progress</p>
+                </div>
                 <div class="section-content"></div>
             </section>
-            <section id="progress">
-                <h2>Planner</h2>
-                <p>Track your progress</p>
+
+            <!-- Focus Section -->
+            <section id="focus" class="app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Focus</h2>
+                    <p class="section-description">Start a distraction-free study session</p>
+                </div>
                 <div class="section-content"></div>
             </section>
-            <section id="focus">
-                <h2>Focus</h2>
-                <p>Start a distraction free study session</p>
-                <div class="section-content"></div>
-            </section>
+
         </main>
-    </div> 
+    </div>
+
 </body>
 </html>
