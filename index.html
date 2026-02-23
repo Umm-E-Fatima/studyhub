@@ -81,7 +81,27 @@
                     <h2 class="section-title">Tasks</h2>
                     <p class="section-description">Manage your study tasks</p>
                 </div>
-                <div class="section-content"></div>
+                <div class="tasks-wrapper">
+                    <form class="tasks-form">
+                        <div class="form-group">
+                            <input type="text" class="task-input" placeholder="Enter a new task" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="add-task-btn">Add Task</button>
+                        </div>
+                    </form>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <div class="task-left">
+                                <input type="checkbox" class="task-checkbox">
+                                <span class="task-text">Complete HTML Layout</span>
+                            </div>
+                            <div class="task-actions">
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Planner Section -->

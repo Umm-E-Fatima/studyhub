@@ -16,7 +16,7 @@ body {
 }
 .sidebar {
     width:250px;
-    background-color:#111827;;
+    background-color:#111827;
     color:white;
     padding:2rem 1rem;
 }
@@ -48,10 +48,68 @@ body {
     background:white;
     padding:1.5rem;
     border-radius:12px;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
     margin-top: 0.5rem;
+}
+.theme-toggle {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background: #f3f4f6;
+    color: #111827;
+
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #111827;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.theme-toggle:active {
+    transform: translateY(0px);
+}
+.tasks-wrapper {
+    margin-top:2rem;
+}
+.task-form {
+    display:flex;
+    gap:1rem;
+    margin-bottom:1.5rem; 
+}
+.task-input {
+    flex:1;
+    padding:0.75rem;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+.add-task-btn {
+    padding:0.75rem 1rem;
+    border:none;
+    background-color:#2563eb;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+.task-list {
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+}
+.task-item {
+    background:white;
+    padding:1rem;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
