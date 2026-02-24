@@ -113,3 +113,9 @@ body {
     justify-content:space-between;
     align-items:center;
 }
+.app-section {
+    display:none;
+}
+#dashboard {
+    display:block;
+}
