@@ -6,10 +6,10 @@ let appdata = {
 };
 
 function updatedashboard() {
-    document.getElementById("total-hours").textContent = appdata.total-hours + "h";
-    document.getElementById("completed-tasks").textContent = appdata.completed-tasks;
-    document.getElementById("active-goals").textContent = appdata.active-goals;
-    document.getElementById("focus-sessions").textContent = appdata.focus-sessions;
+    document.getElementById("total-hours").textContent = appdata.totalhours + "h";
+    document.getElementById("completed-tasks").textContent = appdata.completedtasks;
+    document.getElementById("active-goals").textContent = appdata.activegoals;
+    document.getElementById("focus-sessions").textContent = appdata.focussessions;
 }
 
 updatedashboard();
@@ -27,4 +27,9 @@ navLinks.forEach(link => {
         document.getElementById(targetId).style.display = "block";
         this.classList.add("active");
     });
+});
+// theme toggle btn logic
+const themeToggleBtn=document.getElementById("theme-toggle");
+themeToggleBtn.addEventListener("click",function(){
+    document.body.classList.toggle("dark");
 });

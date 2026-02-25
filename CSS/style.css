@@ -119,3 +119,29 @@ body {
 #dashboard {
     display:block;
 }
+/* for dark theme */
+body {
+    background-color:white;
+    color:black;
+    transition:0.3s ease;
+}
+body.dark{
+    background-color:#121212;
+    color:white;
+}
+.sidebar{
+    background-color:#f4f4f4;
+}
+body.dark.sidebar{
+    background-color:#1e1e1e;
+}
+.stat-card {
+    background-color:white;
+    color:black;
+}
+body.dark.stat-card {
+    background-color:white;
+    color:black;
+
+}
+ 
